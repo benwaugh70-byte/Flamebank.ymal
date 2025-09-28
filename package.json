@@ -1,0 +1,24 @@
+---
+
+# package.json
+
+```json
+{
+  "name": "flamebank-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo \"Replace with build command for your app (e.g. react-scripts build)\" && mkdir -p build && cp -r src/* build/ || true",
+    "test": "echo \"No tests configured. Add unit/integration tests.\" && exit 0",
+    "start": "echo \"Start local dev server (implement as needed)\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "ethers": "^6.7.0",
+    "retry": "^0.13.1",
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
