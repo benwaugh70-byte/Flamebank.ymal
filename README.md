@@ -21,7 +21,7 @@ The deployment is fully automated using GitHub Actions. Pushes to the `master` b
 /Flamebank.ac
 ├── .github/
 │   └── workflows/
-│       ├── release-flamebank.yml      # GitHub Actions workflow; ERROR: fails on beta branch deployment (check secrets & domain config)
+│       ├── release-flamebank.ymal      # GitHub Actions workflow; ERROR: fails on beta branch deployment (check secrets & domain config)
 ├── src/
 │   ├── components/
 │   │   └── Header.js                  # ERROR: missing import of CSS module
