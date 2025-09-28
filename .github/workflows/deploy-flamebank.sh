@@ -23,7 +23,7 @@ echo "🌐 Deploying to GitHub Pages..."
 npx gh-pages -d $BUILD_DIR -b gh-pages
 
 # --- STEP 3B: Optional Vercel Deployment ---
-if [ -n "$VERCEL_TOKEN" ]; then
+if-[-n "$VERCEL_TOKEN" ];then
     echo "🚀 Deploying to Vercel..."
     vercel --prod --token $VERCEL_TOKEN
 echo "✅ Deployment complete!"
