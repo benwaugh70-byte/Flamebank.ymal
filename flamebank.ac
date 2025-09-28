@@ -1,0 +1,2 @@
+WEB3_RPC_URL="https://..." WEB3_PRIVATE_KEY="0x..." LEDGER_API_KEY="xxx" node scripts/hash-registrations.js
+WEB3_RPC_URL="https://..." WEB3_PRIVATE_KEY="0x..." LEDGER_API_KEY="xxx" CARD_ISSUER_KEY="yyy" node scripts/issue-ledger-cards.js
