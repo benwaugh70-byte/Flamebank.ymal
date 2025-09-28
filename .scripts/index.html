@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FlameBank — Beta Registration</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="FlameBank beta — register to join the inaugural cohort. Web3 hashed identities, embedded ledgers." />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FlameBank <span class="beta">BETA</span></h1>
+      <p class="tagline">Sovereign accounts. Web3-anchored identity. Device-first ledgers.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Request Beta Access</h2>
+        <form id="registerForm">
+          <label>
+            Full name
+            <input id="name" name="name" type="text" required />
+          </label>
+
+          <label>
+            Email
+            <input id="email" name="email" type="email" required />
+          </label>
+
+          <label>
+            Phone (international)
+            <input id="phone" name="phone" type="tel" required pattern="^\+?[0-9\-\s]{7,20}$" />
+          </label>
+
+          <label>
+            Device ID (optional)
+            <input id="deviceId" name="deviceId" type="text" placeholder="device-xxxx" />
+          </label>
+
+          <div class="actions">
+            <button type="submit" id="submitBtn">Join Waitlist</button>
+          </div>
+        </form>
+
+        <div id="status" class="status" aria-live="polite"></div>
+      </section>
+
+      <section class="info">
+        <h3>What beta means</h3>
+        <p>This is an early test. Ledgers/cards issued during beta are sandboxed. Expect development noise.</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>Founder & Release Manager: Ben Alan Waugh — Waughtheo A. ∆Ω</small>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
