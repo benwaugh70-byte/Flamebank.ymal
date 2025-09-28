@@ -18,7 +18,7 @@ The deployment is fully automated using GitHub Actions. Pushes to the `master` b
 3. Tests execution
 4. Deployment to GitHub Pages or target web host
 ## Folder Structure
-/Flamebank
+/Flamebank.ac
 ├── .github/
 │   └── workflows/
 │       ├── release-flamebank.yml      # GitHub Actions workflow; ERROR: fails on beta branch deployment (check secrets & domain config)
