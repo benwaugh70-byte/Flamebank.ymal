@@ -15,7 +15,7 @@ npm run build
 # --- STEP 2: Commit & Push Changes ---
 echo "📤 Committing changes..."
 git add .
-git commit -m "Auto-deploy build $(date '+%Y-%m-%d %H:%M:%S')"||echo "No changes to commit"
+git commit -m "Auto-deploy build $(date '+%Y-%m-%d %H:%M:%S')"echo "No changes to commit"
 git push origin $TARGET_BRANCH
 
 # --- STEP 3A: Deploy to GitHub Pages ---
