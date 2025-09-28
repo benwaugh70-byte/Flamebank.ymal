@@ -11,7 +11,7 @@ FlameBank is a sovereign web-based banking platform enabling users to register, 
 - CI/CD with automated tests
 
 ## Deployment
-The deployment is fully automated using GitHub Actions. Pushes to the `main` branch trigger:
+The deployment is fully automated using GitHub Actions. Pushes to the `master` branch trigger:
 
 1. Installation of dependencies
 2. Build of the web app
