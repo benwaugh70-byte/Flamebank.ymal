@@ -88,4 +88,8 @@ jobs:
           node scripts/issue-ledger-cards.js
 
       - name: Notify success
-        run: echo "FlameBank deployed to ${{ secrets.SITE_URL }} and post-deploy tasks executed."
+        run: echo "FlameBank deployed to ${{ secrets.SITE_URL }} and post-deploy tasks executed."- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v6
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./build
