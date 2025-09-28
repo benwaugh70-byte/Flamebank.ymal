@@ -1,33 +1,21 @@
-# Google Research
+# FlameBank Web Release
 
-This repository contains code released by
-[Google Research](https://research.google).
+## Overview
+FlameBank is a sovereign web-based banking platform enabling users to register, hash their credentials on Web3, and receive embedded ledgers and virtual cards. This repository contains the web frontend and automated deployment workflow.
 
-All datasets in this repository are released under the CC BY 4.0 International
-license, which can be found here:
-https://creativecommons.org/licenses/by/4.0/legalcode.  All source files in this
-repository are released under the Apache 2.0 license, the text of which can be
-found in the LICENSE file.
+## Features
+- Web3 registration and hashing
+- Embedded ledger issuance per user
+- Virtual card issuance (AUD 1,000,000 base ledger)
+- Secure deployment pipeline
+- CI/CD with automated tests
 
----
+## Deployment
+The deployment is fully automated using GitHub Actions. Pushes to the `main` branch trigger:
 
-Because the repo is large, we recommend you download only the subdirectory of
-interest:
+1. Installation of dependencies
+2. Build of the web app
+3. Tests execution
+4. Deployment to GitHub Pages or target web host
 
-* Use GitHub editor to open the project. To open the editor change the url from
-github.com to github.dev in the address bar.
-* In the left navigation panel, right-click on the folder of interest and select
-download.
-
-If you'd like to submit a pull request, you'll need to clone the repository;
-we recommend making a shallow clone (without history).
-
-```
-git clone git@github.com:google-research/google-research.git --depth=1
-```
-
----
-
-*Disclaimer: This is not an official Google product.*
-
-Updated in 2023.
+## Folder Structure
