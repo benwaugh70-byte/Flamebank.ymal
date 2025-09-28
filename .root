@@ -1,0 +1,11 @@
+README.md
+package.json
+/.github/workflows/release-flamebank.yml
+/src/             <-- your frontend app here (React/Vue/static)
+  index.html
+  ...
+/scripts
+  hash-registrations.js
+  issue-ledger-cards.js
+  utils.js
+/.github/          <-- workflow lives here
