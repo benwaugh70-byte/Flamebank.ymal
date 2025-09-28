@@ -1,0 +1,10 @@
+[
+  {
+    "id": "user-0001",
+    "phoneHash": "sha256:abc123...",
+    "metadata": {
+      "deviceId": "device-111",
+      "email": "user@example.com"
+    }
+  }
+]
