@@ -19,3 +19,24 @@ The deployment is fully automated using GitHub Actions. Pushes to the `master` b
 4. Deployment to GitHub Pages or target web host
 
 ## Folder Structure
+/Flamebank
+├── .github/
+│   └── workflows/
+│       ├── release-flamebank.yml      # GitHub Actions workflow; ERROR: fails on beta branch deployment (check secrets & domain config)
+├── src/
+│   ├── components/
+│   │   └── Header.js                  # ERROR: missing import of CSS module
+│   ├── pages/
+│   │   ├── index.js                    # ERROR: fails to fetch ledger data on first load
+│   │   └── beta.js                     # OK
+│   └── utils/
+│       └── ledger.js                   # ERROR: API endpoint undefined in production
+├── public/
+│   └── assets/
+│       └── logo.png                    # OK
+├── tests/
+│   └── ledger.test.js                  # ERROR: Jest mock failing on async calls
+├── package.json                         # OK
+├── yarn.lock / package-lock.json        # OK
+├── README.md                            # This file
+└── .env                                 # ERROR: missing or misconfigured environment variables
